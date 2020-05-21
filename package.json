@@ -1,0 +1,21 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:mochawesome": "cypress run -b chrome mochawesome -s 'cypress/integration/MyShopifyWebTest.spec.js'",
+    "merge_reports": "mochawesome-merge --reportDir mochawesome-report > mochawesome-report/output.json",
+    "report": "marge mochawesome-report/output.json",
+    "cleanup": "rm -fr cypress/report/mochawesome-report"
+    },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.5.0",
+    "mocha": "^7.1.2",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.0.3"
+  }
+  
+}
