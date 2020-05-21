@@ -12,5 +12,4 @@
         "ENVIRONMENT": "staging",
         "CYPRESS_RETRIES": 2
     }
-    
 }
