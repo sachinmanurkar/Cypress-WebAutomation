@@ -11,6 +11,6 @@ function getCongByFile(file) {
 
 module.exports = (on, config) => {
 
-  const file = config.env.configFile;
+  const file = 'qa'
   return getCongByFile(file);
 }
