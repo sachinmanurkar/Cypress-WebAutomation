@@ -1,6 +1,7 @@
 {
     "baseUrl": "https://ecom-optimus.myshopify.com/",
     "reporter": "mochawesome",
+    "screenshotsFolder":"cypress/screenshots/staging",
     "reporterOptions": {
         "charts": true,
         "overwrite": false,
