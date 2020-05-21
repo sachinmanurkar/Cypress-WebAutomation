@@ -1,5 +1,5 @@
 cypress-test:
-  image: cypress/browsers:node11.13.0-chrome69
+  image: cypress/browsers:chrome69
   stage: test
   artifacts:
       paths:
