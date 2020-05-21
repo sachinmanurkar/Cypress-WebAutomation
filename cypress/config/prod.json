@@ -1,0 +1,15 @@
+{
+    "baseUrl": "https://ecom-optimus.myshopify.com/",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "charts": true,
+        "overwrite": false,
+        "html": true,
+        "json": false,
+        "reportDir": "cypress/report/mochawesome-report"
+    },
+    "env": {
+        "ENVIRONMENT": "prod",
+        "CYPRESS_RETRIES": 2
+    }
+}

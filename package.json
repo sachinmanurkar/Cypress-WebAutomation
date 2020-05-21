@@ -7,8 +7,11 @@
     "test:mochawesome": "cypress run -b chrome mochawesome -s 'cypress/integration/MyShopifyWebTest.spec.js'",
     "merge_reports": "mochawesome-merge --reportDir mochawesome-report > mochawesome-report/output.json",
     "report": "marge mochawesome-report/output.json",
-    "cleanup": "rm -fr cypress/report/mochawesome-report"
-    },
+    "cleanup": "rm -fr cypress/report/mochawesome-report",
+    "test:qa": "cypress run -b chrome mochawesome -e configFile=qa -s 'cypress/integration/MyShopifyWebTest.spec.js'",
+    "test:prod": "cypress run -b chrome mochawesome -e configFile=prod -s 'cypress/integration/MyShopifyWebTest.spec.js'",
+    "test:staging": "cypress run -b chrome mochawesome -e configFile=staging -s 'cypress/integration/MyShopifyWebTest.spec.js'"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -17,5 +20,4 @@
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.0.3"
   }
-  
 }
