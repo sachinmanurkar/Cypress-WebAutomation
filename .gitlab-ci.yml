@@ -8,4 +8,4 @@ cypress-test:
   script:
     - npm install
     - npm update
-    - $(npm bin)/cypress run -s "cypress/integration/MyShopifyWebTest.spec.js"
+    - $(npm bin)/cypress run test:qa configFile=qa -s "cypress/integration/MyShopifyWebTest.spec.js"
