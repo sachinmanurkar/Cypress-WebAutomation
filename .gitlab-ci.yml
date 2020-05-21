@@ -1,0 +1,11 @@
+cypress-test:
+  image: cypress/browsers:node11.13.0-chrome73
+  stage: test
+  artifacts:
+      paths:
+      - cypress/screenshots
+      - cypress/videos
+  script:
+    - npm install
+    - npm update
+    - $(npm bin)/cypress run -s "cypress/integration/MyShopifyWebTest.spec.js"
