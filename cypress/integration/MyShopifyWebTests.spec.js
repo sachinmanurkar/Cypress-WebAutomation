@@ -27,7 +27,7 @@ describe('My Shopify Webtests', function () {
         homePage.getSearchButton().click()
         homePage.getSearchTextBox().type(this.data.productName)
         homePage.getSearchTextBox().type('{enter}')
-        // this.user exists
+         // this.user exists
         cy.selectProduct(this.data.productName)
         productDetailspage.getAddToCartButton().click()
         productDetailspage.getAddedToCartPopUpMessage().should('contain.text', 'Just added to your cart')
