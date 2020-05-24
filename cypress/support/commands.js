@@ -49,7 +49,7 @@ Cypress.Commands.add("selectDropDown", (optiontext) => {
         })
 })
 
-Cypress.Commands.add("SelectSize", (size) => {
+Cypress.Commands.add("selectSize", (size) => {
     cy.get('#SingleOptionSelector-1').contains(size)
         .then(element => {
             var text = element.text();
@@ -57,7 +57,7 @@ Cypress.Commands.add("SelectSize", (size) => {
         })
 })
 
-Cypress.Commands.add('AddToCartAndVerify', () => {
+Cypress.Commands.add('addToCartAndVerify', () => {
     cy.get('.product-form__item > .btn').click()
     cy.get('#CartPopupHeading').should('contain.text', 'Just added to your cart')
 

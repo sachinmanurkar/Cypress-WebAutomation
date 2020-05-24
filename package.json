@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:qa": "cypress run -b chrome mochawesome -e configFile=qa -s 'cypress/integration/MyShopifyWebTest.spec.js'",
-    "test:prod": "cypress run -b chrome mochawesome -e configFile=prod -s 'cypress/integration/MyShopifyWebTest.spec.js'",
-    "test:staging": "cypress run -b chrome mochawesome -e configFile=staging -s 'cypress/integration/MyShopifyWebTest.spec.js'"
+    "test:qa": "cypress run -b chrome mochawesome -e configFile=qa -s 'cypress/integration/MyShopifyWebTests.spec.js'",
+    "test:prod": "cypress run -b chrome mochawesome -e configFile=prod -s 'cypress/integration/MyShopifyWebTests.spec.js'",
+    "test:staging": "cypress run -b chrome mochawesome -e configFile=staging -s 'cypress/integration/MyShopifyWebTests.spec.js'"
   },
   "author": "",
   "license": "ISC",
